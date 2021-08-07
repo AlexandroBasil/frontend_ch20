@@ -61,8 +61,7 @@ class Catalog extends Component {
       if(!categories.includes(category)){
         categories.push(category);
       }
-    }
-    console.log(categories);
+    };
     
     this.setState({ catalog: data, categories: categories });
   }

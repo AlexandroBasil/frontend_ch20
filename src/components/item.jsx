@@ -43,7 +43,6 @@ class Item extends Component {
     }
 
     handleQuantityChange = (quantity) => {
-      console.log("Quantity Changed", quantity);
       this.setState({quantity: quantity});
     };
 }
