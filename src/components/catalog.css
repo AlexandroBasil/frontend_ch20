@@ -1,0 +1,7 @@
+body {
+    background-color: var(--background);
+}
+
+.titleHeading {
+    margin: 1rem 0;
+}
