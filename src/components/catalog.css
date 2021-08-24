@@ -5,3 +5,11 @@ body {
 .titleHeading {
     margin: 1rem 0;
 }
+
+.filterButton {
+    margin-bottom: 1rem;
+}
+
+.filterButton .btn {
+    margin-right: 3px;
+}

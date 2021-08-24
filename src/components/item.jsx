@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import QuantityPicker from './quantityPicker';
+import storeContext from '../store/storeContext';
 
 import "./item.css";
 
 class Item extends Component {
+    static contextType = storeContext
     state = { 
       quantity: 1,
      }
@@ -28,7 +30,7 @@ class Item extends Component {
             <div className="item-controls">
               <QuantityPicker onChange={this.handleQuantityChange}></QuantityPicker>
 
-              <button className="btn btn-sm btn-info btn-add">
+              <button className="btn btn-sm btn-info btn-add" onClick={this.handleAddToCart}>
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>
               </button>
             </div>
@@ -45,6 +47,15 @@ class Item extends Component {
     handleQuantityChange = (quantity) => {
       this.setState({quantity: quantity});
     };
+
+    handleAddToCart = () => {
+      let prod = {
+        ...this.props.data,  // item information
+        quantity: this.state.quantity,
+      };
+
+      this.context.addProductToCart(prod);
+    }
 }
  
 export default Item;

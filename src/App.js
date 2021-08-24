@@ -1,21 +1,39 @@
-import './App.css';
-import NavBar from './components/navBar';
-import Footer from './components/footer';
-import Catalog from './components/catalog';
+import "./App.css";
+import NavBar from "./components/navBar";
+import Footer from "./components/footer";
+import Catalog from "./components/catalog";
+import Home from "./components/home";
+import About from "./components/about";
+import Admin from "./components/admin";
+import GlobalState from "./store/globalContext";
+import Cart from "./components/cart";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "font-awesome/css/font-awesome.min.css";
 
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-      <NavBar></NavBar>
+    <GlobalState>
+      <BrowserRouter>
+        <div className="App">
+          <NavBar></NavBar>
 
-      <Catalog></Catalog>
-      
-      <Footer></Footer>
-    </div>
+          <Switch>
+            <Route path="/" exact component={Home}></Route>
+            <Route path="/home" exact component={Home}></Route>
+            <Route path="/catalog" exact component={Catalog}></Route>
+            <Route path="/about" exact component={About}></Route>
+            <Route path="/cart" exact component={Cart}></Route>
+            <Route path="/admin" exact component={Admin}></Route>
+          </Switch>
+
+          <Footer></Footer>
+        </div>
+      </BrowserRouter>
+    </GlobalState>
   );
 }
 

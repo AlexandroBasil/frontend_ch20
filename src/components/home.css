@@ -1,0 +1,9 @@
+.home-page {
+    min-height: 600px;
+    background-color: var(--background);
+}
+
+.home-page h1 {
+    text-align: center;
+    color: var(--text);
+}

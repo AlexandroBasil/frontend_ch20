@@ -95,7 +95,7 @@ class ItemService {
   }
 
   saveItem(item) {
-
+    console.log("Todo: Send object to server");
   }
 
   getItemDetails(id) {

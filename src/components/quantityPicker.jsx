@@ -9,11 +9,11 @@ class QuantityPicker extends Component {
     return (
       <div className="quantityPicker">
         <button onClick={this.increaseQuantity} className="btn btn-sm btn-dark quantityModifier" >
-          <i class="fa fa-plus" aria-hidden="true"></i>
+          <i className="fa fa-plus" aria-hidden="true"></i>
         </button>
-        {this.state.quantity}
+        <b> {this.state.quantity} </b>
         <button onClick={this.decreaseQuantity} className="btn btn-sm btn-dark quantityModifier" >
-          <i class="fa fa-minus" aria-hidden="true"></i>
+          <i className="fa fa-minus" aria-hidden="true"></i>
         </button>
       </div>
     );
