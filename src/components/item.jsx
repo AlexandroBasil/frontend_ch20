@@ -21,7 +21,7 @@ class Item extends Component {
             <h5>{this.props.data.title}</h5>
 
             <label className="monetaryValues">
-              Price: ${this.props.data.price.toFixed(2)}
+              Price: ${( +this.props.data.price ).toFixed(2)}
             </label>
             <label className="monetaryValues">
               Total: ${this.getTotal()}

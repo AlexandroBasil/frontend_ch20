@@ -1,4 +1,4 @@
-// 9 total
+import axios from "axios";
 
 var catalog = [
   {
@@ -86,16 +86,21 @@ var catalog = [
 
 
 class ItemService {
-  getCatalog() {
+  async getCatalog() {
     // logic for server call
     // Retrieve array of products
+    let response = await axios.get('http://127.0.0.1:5000/api/catalog');
+    return response.data;
+
 
     // Return mock 
-      return catalog;
+      // return catalog;
   }
 
-  saveItem(item) {
+  async saveItem(item) {
     console.log("Todo: Send object to server");
+
+    await axios.post('http://127.0.0.1:5000/api/catalog', item);
   }
 
   getItemDetails(id) {

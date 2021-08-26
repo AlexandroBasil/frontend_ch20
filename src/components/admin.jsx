@@ -61,14 +61,15 @@ class Admin extends Component {
         this.setState({ [event.target.name]: event.target.value })
     }
     
-    handleRegister = () => {
+    handleRegister = async () => {
         // Create object
         let item = { ...this.state };
-        console.log(item)
+        item.price = item.price * 1;
+        item.stock = +item.stock;
 
         //Send object to server
         let service = new ItemService();
-        service.saveItem(item);
+        await service.saveItem(item);
 
         // Clear form
         this.setState({ title: "", category: "", price: "", stock: "", imageName: "", description: "", showAlert: true });
