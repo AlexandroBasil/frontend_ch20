@@ -1,0 +1,14 @@
+.purchase-history-record {
+  border: 1px solid var(--primary);
+  background-color: var(--background-light);
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 0 30px 10px 30px;
+
+  display: flex;
+  align-items: center;
+}
+
+.purchase-history-record label {
+  flex: 1;
+}

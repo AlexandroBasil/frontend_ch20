@@ -7,7 +7,6 @@ class About extends Component {
     return (
       <div className="about-page">
         <div className="jumbotron">
-          
           <h1>The Needle</h1>
           <h3>About Us</h3>
           <p>
@@ -24,6 +23,17 @@ class About extends Component {
             is more than just saving a few bucks - true value lies at the
             intersection of something made well for a fair price, created in way
             that supports those who made it.
+          </p>
+
+          <h5>AN AMERICAN LEGACY THAT BEGAN IN 1922</h5>
+          <p>
+            In 1922, The Needle founder Alex Garcia Sr. launched his new shoe
+            company in Belgium, Wisconsin. From the start, we became known as a
+            “new kind of shoe company.” That’s because of The Needle's
+            innovative manufacturing techniques to make fashionable and durable
+            shoes that were nail-less and shankless (meaning they had no
+            uncomfortable metal bar under the instep), which were an instant
+            success.
           </p>
         </div>
       </div>

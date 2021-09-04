@@ -7,6 +7,8 @@ import About from "./components/about";
 import Admin from "./components/admin";
 import GlobalState from "./store/globalContext";
 import Cart from "./components/cart";
+import PlacedOrders from "./components/placedOrders";
+import PurchaseHistory from "./components/purchaseHistory";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -28,6 +30,8 @@ function App() {
             <Route path="/about" exact component={About}></Route>
             <Route path="/cart" exact component={Cart}></Route>
             <Route path="/admin" exact component={Admin}></Route>
+            <Route path="/placed-orders" exact component={PlacedOrders}></Route>
+            <Route path="/purchases" exact component={PurchaseHistory}></Route>
           </Switch>
 
           <Footer></Footer>

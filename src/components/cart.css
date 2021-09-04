@@ -1,7 +1,23 @@
 .cart-page .cart-container {
-    flex: 4;
+  flex: 4;
 }
 
-.cart-page .totals-container {
-    flex: 1;
+.cart-page .cart-container {
+  flex: 1;
+  margin-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.cart-page .btn-apply-code {
+  margin: -2px 5px 5px 10px;
+}
+
+.cart-page .cart-pay {
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  background-color: var(--background);
+  padding: 5px 5px 10px 5px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }

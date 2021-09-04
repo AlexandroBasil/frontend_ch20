@@ -8,10 +8,12 @@ class Home extends Component {
       <div className="home-page">
         <img
           className="cover"
-          src="https://www.loveyourclothes.org.uk/sites/default/files/Leather_original_476136478.jpg"
+          src="/images/misc/Leather_cover_cut.jpg"
           alt="leather"
         ></img>
-        <h1>Welcome to Leathers Finest Shop</h1>
+        <h1>The Needle</h1>
+        <h3>Leathers Finest Online Shop</h3>
+        <hr />
         <p>
           Here at The Needle, we offer an unparalleled blend of quality,
           consistency, responsiveness, and innovation. Through the years, we
